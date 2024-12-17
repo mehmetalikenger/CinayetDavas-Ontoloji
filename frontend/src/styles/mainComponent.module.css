@@ -1,0 +1,293 @@
+/**HEADER**/
+.header {
+  margin-top: 30px;
+  padding: 0 20px;
+}
+
+.header h1 {
+  color: #000;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+/** FILTER **/
+.casesContainer {
+  margin-top: 50px;
+  padding: 0 20px;
+}
+
+.filterContainer {
+  background-color: #4073e1;
+  padding: 20px;
+}
+
+.filterContainer .title {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.dropdown {
+  width: 250px !important;
+}
+
+.customDropdown {
+  padding: 5px 20px 5px 5px;
+  border-radius: 3px;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #5b5b5b;
+  border: none;
+  margin-top: 20px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.customDropdown:focus,
+.customDropdown:hover,
+.customDropdown:active,
+.customDropdown:visited,
+.customDropdown:checked,
+.customDropdown:focus:active {
+  background-color: #f0f0f0 !important;
+  color: #5b5b5b !important;
+}
+
+.customDropdown:sel .item:focus:active {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+.filters input {
+  width: 250px;
+  margin-top: 20px;
+  padding: 5px 20px 5px 20px;
+  border-radius: 3px;
+  border: none;
+  color: #5b5b5b;
+}
+
+.filters input:focus {
+  outline: none;
+}
+
+.queryButton button {
+  margin-top: 20px;
+  padding: 5px 20px;
+  border-radius: 3px;
+  border: none;
+  background-color: #cfcfcf;
+  color: #000000;
+  cursor: pointer;
+}
+
+/* TABLE */
+.tableContainer {
+  width: 100%;
+  overflow: scroll;
+  margin-top: 40px;
+  border: 1px solid #a5a5a5;
+}
+
+table {
+  width: 100%;
+  overflow: scroll;
+}
+
+table th {
+  border-right: 1px solid #a5a5a5;
+  border-bottom: 1px solid #a5a5a5;
+  text-align: center;
+  padding: 5px 0;
+  font-weight: 500;
+}
+
+table th:last-child {
+  border-right: none;
+}
+
+tbody tr th {
+  font-weight: 400;
+  padding: 10px 10px;
+}
+
+thead tr {
+  background-color: #d9d9d9;
+}
+
+thead tr .name {
+  min-width: 200px;
+}
+
+thead tr .type {
+  min-width: 200px;
+}
+
+thead tr .year {
+  min-width: 100px;
+}
+
+thead tr .city {
+  min-width: 100px;
+}
+
+thead tr .button {
+  min-width: 100px;
+}
+
+tbody button {
+  padding: 5px 10px;
+  border: none;
+  background-color: #4073e1;
+  color: #fff;
+  border-radius: 3px;
+}
+
+/* DETAILS */
+.caseDetails {
+  margin-top: 100px;
+  padding: 0 20px;
+  margin-bottom: 100px;
+}
+
+.caseDetails h2 {
+  color: #000;
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+
+.caseDetails .details {
+  border: 1px solid #a5a5a5;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.details .detailsContainer div {
+  display: flex;
+}
+
+.details .detailsContainer div span {
+  font-weight: 500;
+}
+
+.details .detailsContainer div p {
+  margin-left: 10px;
+}
+
+.caseStatus {
+  display: flex;
+  align-items: center;
+}
+
+.caseStatus p {
+  margin-bottom: 0;
+}
+
+.caseDetailsButton {
+  width: 20px;
+  display: flex;
+  margin-left: 10px;
+}
+
+.caseDetailsButton img {
+  width: 100%;
+  object-fit: contain;
+}
+
+@media only screen and (min-width: 768px) {
+  .filters input {
+    margin-right: 20px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .filters {
+    display: flex;
+  }
+
+  .filterContainer .title {
+    margin: 0;
+  }
+
+  .dropdown {
+    margin-right: 20px;
+  }
+
+  .details {
+    display: flex;
+  }
+
+  .details .right {
+    margin-left: 175px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .mainContent {
+    width: 75%;
+    margin: 50px auto;
+  }
+
+  .queryButton button:hover {
+    background-color: #fff;
+  }
+
+  .detailsButton:hover {
+    background-color: #5685eb;
+  }
+
+  .caseDetailsButton img {
+    cursor: pointer;
+  }
+
+  table th:last-child {
+    border-right: 1px solid #a5a5a5;
+  }
+
+  .tableContainer {
+    width: 100%;
+    overflow: auto;
+  }
+
+  table thead tr th {
+    border-bottom: none;
+  }
+
+  table thead tr th:last-child {
+    border-right: none;
+  }
+
+  thead tr .name {
+    min-width: 0;
+    width: 250px;
+  }
+
+  thead tr .year,
+  thead tr .city,
+  thead tr .button {
+    min-width: 0;
+    width: auto;
+  }
+
+  table tbody tr th {
+    border-bottom: none;
+    border-top: 1px solid #a5a5a5;
+  }
+
+  table tbody tr th:last-child {
+    border-right: none;
+  }
+
+  table tbody tr th {
+    width: 0;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .mainContent {
+    width: 60%;
+  }
+}
